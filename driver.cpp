@@ -1,9 +1,13 @@
 #include <iostream>
-#include "algo/speedlnx.h";
+#include "ball.h"
 
 using namespace std;
 
 int main() {
-    Speed speed;
-    cout << "my bounce ball math game";
+    double speed = 20.2;
+    double acceleration = -1.8;
+    double position = 1.1;
+    Ball ball(speed, acceleration, position);
+    cout << "my bounce ball math game.\n";
+    cout << "created ball with speed: " << speed << ", acceleration: " << acceleration << ", and position: " << position;
 }
