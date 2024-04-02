@@ -7,9 +7,8 @@ include_directories(algo)
 include_directories(reader)
 
 add_executable(bounceBall
-        algo/speedlnx.cpp
-        algo/speedlnx.h
-        reader/filereader.cpp
         ball.cpp
+        ball.h
         driver.cpp
-        ball.h)
+        lifetime.cpp
+        lifetime.h)
