@@ -7,8 +7,12 @@ include_directories(algo)
 include_directories(reader)
 
 add_executable(bounceBall
-        ball.cpp
-        ball.h
+        model/ball.cpp
+        model/ball.h
         driver.cpp
         lifetime.cpp
-        lifetime.h)
+        lifetime.h
+        model/Speed.cpp
+        model/Speed.h
+        display/SimpleDisplayer.cpp
+        display/SimpleDisplayer.h)
