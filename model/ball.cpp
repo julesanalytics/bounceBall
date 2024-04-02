@@ -1,4 +1,5 @@
 #include "ball.h"
+#include "../util/algos.cpp"
 
 class Ball {
 private:
@@ -42,6 +43,8 @@ public:
     static void updateBall(Ball* b, float changeInTime) {
         b->setLifetime(b->getLifetime()+changeInTime);
         b->setPosition(b->getPosition() + (b->getSpeed()*changeInTime));
-        b->setSpeed(100/(b->getPosition()*b->getPosition())); // this should be a function of some sort
+        b->setSpeed(oneHundredOverXSquared(changeInTime)); // this should be a function of some sort
+//        b->setSpeed(100/(changeInTime*changeInTime)); // this should be a function of some sort
     }
 };
+
